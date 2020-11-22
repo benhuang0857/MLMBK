@@ -91,6 +91,14 @@
                         </div>
                     </div>
 
+                    <div class="form-group{{ $errors->has('contract_url') ? ' has-error' : '' }}">
+                        <label for="contract_url" class="col-md-4 control-label">合約書連結<span style="color:red">*</span></label>
+
+                        <div class="col-md-12">
+                        <input id="contract_url" type="text" class="form-control" name="contract_url" required>
+                        </div>
+                    </div>
+
                     <div class="form-group{{ $errors->has('authorization_code') ? ' has-error' : '' }}">
                         <label for="authorization_code" class="col-md-4 control-label">授權碼<span style="color:red">*</span></label>
 

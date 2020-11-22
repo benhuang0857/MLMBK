@@ -330,6 +330,7 @@ class AdminController extends Controller
         $user->phone = $request->input('phone');
         $user->address = $request->input('address');
         $user->authorization_code = $request->input('authorization_code');
+        $user->contract_url = $request->input('contract_url');
         $user->role = $request->input('role');
         $user->milage = $request->input('milage');
 

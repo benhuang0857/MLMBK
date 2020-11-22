@@ -109,6 +109,7 @@ class RegisterController extends Controller
         $user->leader_id = intval($data['leader_id']);
         $user->image = $imageNametoStore;
         $user->authorization_code = $data['authorization_code'];
+        $user->contract_url = $data['contract_url'];
         $user->milage = 0;
         
         $user->level = json_encode($userLevelArray,JSON_UNESCAPED_UNICODE);

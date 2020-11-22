@@ -99,6 +99,10 @@
                         <input type="text" class="form-control" id="authorization_code" name="authorization_code" value="{{$MEM->authorization_code}}" required>
                     </div>
                     <div class="form-group">
+                        <label for="contract_url">合約書連結<span style="color:red">*</span></label>
+                        <input type="text" class="form-control" id="contract_url" name="contract_url" value="{{$MEM->contract_url}}" required>
+                    </div>
+                    <div class="form-group">
                         <label for="milage">里程數<span style="color:red">*</span></label>
                         <input type="number" class="form-control" id="milage" name="milage" value="{{$MEM->milage}}" required>
                     </div>

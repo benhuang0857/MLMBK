@@ -55,7 +55,7 @@
                 type: 'POST',
                 url: '/back/admin/members/'+articleId+'/delete',
                 success:function(res){
-                    window.location.href = '/admin/members';
+                    window.location.href = '/back/admin/members';
                 }
             })
         }

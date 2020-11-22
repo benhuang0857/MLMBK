@@ -68,7 +68,7 @@ Route::get('/admin/members','AdminController@ShowMembersPage');
 Route::get('/admin/allmembers','AdminController@ShowAllMembersPage');
 Route::get('/admin/members/{id}','AdminController@ShowYourMembersInfo');
 Route::post('/admin/members/{id}/update','AdminController@UpdateYourMembersInfo');
-Route::delete('/admin/members/{id}/delete','AdminController@DeleteYourMember');
+Route::post('/admin/members/{id}/delete','AdminController@DeleteYourMember');
 
 //搜尋會員
 Route::post('/admin/allmembers/search','AdminController@SearchMember');

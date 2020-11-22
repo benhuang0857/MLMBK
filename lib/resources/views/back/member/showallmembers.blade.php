@@ -44,32 +44,6 @@
     </div>
     <!-- /.content-wrapper -->
     <script type="text/javascript">
-        $('body').on('keyup', '#search-member', function(){
-            var searchQ = $(this).val();
-            
-            $.ajax({
-                method: 'POST',
-                url: '/admin/allmembers/search',
-                dataType: 'json',
-                data: {
-                    '_token': '{{csrf_token()}}',
-                    searchQ: searchQ
-                },
-
-                success: function(res){
-                    var tableRow = '';
-                    $('#dynamic-row').html('');
-                    $.each(res, function(index, value){
-                        $tableRow = '<tr><th scope="row">'+value.authorization_code+'</th><td>'+
-                        value.name+'</td><td>'+value.email+'</td><td>'+value.phone+'</td><td>'+
-                        value.milage+'</td><th><a class="btn btn-primary" style="margin-bottom:5px;display: block;" href="/admin/members/'+
-                        value.id+'">編輯</a><a href="#" class="btn btn-danger" style="margin-bottom:5px;display: block;" onclick="callAjax('+value.id+')">刪除</a></th></tr>';
-                        $('#dynamic-row').append($tableRow);
-                    });
-                }
-            });
-
-        });
         function callAjax(articleId) {
             $.ajaxSetup({
                 headers: {
@@ -80,8 +54,6 @@
             $.ajax({
                 type: 'POST',
                 url: '/admin/members/'+articleId+'/delete',
-                data: {_method: 'DELETE'},
-
                 success:function(res){
                     window.location.href = '/admin/members';
                 }

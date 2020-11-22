@@ -111,6 +111,18 @@
                 <span class="text-muted"></span>
                 </p>
             </div>
+            <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
+                <p class="text-danger text-xl">
+                <i class="fa fa-mobile"></i>
+                您的合約書連結
+                </p>
+                <p class="d-flex flex-column text-right">
+                <span class="font-weight-bold">
+                    {{$USER->contract_url}}
+                </span>
+                <span class="text-muted"></span>
+                </p>
+            </div>
 
             <a href="{{url('/admin/edit')}}" class="btn waves-effect button-full"><b>修改資訊</b></a>
         </div>

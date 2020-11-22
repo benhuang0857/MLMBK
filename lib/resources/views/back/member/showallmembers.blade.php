@@ -53,7 +53,7 @@
 
             $.ajax({
                 type: 'POST',
-                url: '/admin/members/'+articleId+'/delete',
+                url: '/back/admin/members/'+articleId+'/delete',
                 success:function(res){
                     window.location.href = '/admin/members';
                 }

@@ -379,7 +379,8 @@ ul li {
 }
 
 .sidebar .sidebar-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)), url(../images/bg-user.jpg);
+  /*background: linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)), url(../images/bg-user.jpg);*/
+  background: linear-gradient(rgba(0, 0, 0, 0.62);
   background-size: cover;
   padding: 60px 20px 20px;
   text-align: center;

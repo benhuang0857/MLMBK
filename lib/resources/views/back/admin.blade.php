@@ -133,7 +133,7 @@
                 </p>
                 <p class="d-flex flex-column text-right">
                 
-                    @foreach ($PN-> as $N)
+                    @foreach ($PN as $N)
                     <span class="font-weight-bold">
                         {{$N}} 盒
                     </span>

@@ -128,6 +128,14 @@
                         <label for="remarks">填寫盒數</label>
                         <input type="text" class="form-control" id="remarks" name="remarks" placeholder="會員暱稱" value="{{$MEM->remarks}}">
                     </div>
+                    @if ($MEM->id == 0)
+                    <div class="form-group">
+                        <label for="leader_id">指派領導(不填則照舊)</label>
+                        <select class="form-control" id="leader_id" name="leader_id">
+                            <option selected value="0">GOD</option>
+                        </select>
+                    </div>
+                    @else
                     <div class="form-group">
                         <label for="leader_id">指派領導(不填則照舊)</label>
                         <select class="form-control" id="leader_id" name="leader_id">
@@ -136,7 +144,7 @@
                             @endforeach
                         </select>
                     </div>
-                    
+                    @endif                    
                     <div class="form-group">
                         <label for="password">會員新密碼(不填則照舊)</label>
                         <input id="password" type="password" class="form-control" name="password">

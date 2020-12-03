@@ -123,7 +123,27 @@
                 <span class="text-muted"></span>
                 </p>
             </div>
-
+         
+            @if (!empty($USER->remarks))
+            <?php $PN = explode(',', $USER->remarks) ?>
+            <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
+                <p class="text-danger text-xl">
+                <i class="fa fa-mobile"></i>
+                購買盒數
+                </p>
+                <p class="d-flex flex-column text-right">
+                
+                    @foreach ($PN-> as $N)
+                    <span class="font-weight-bold">
+                        {{$N}} 盒
+                    </span>
+                    @endforeach
+               
+                <span class="text-muted"></span>
+                </p>
+            </div>
+            @endif
+            
             <a href="{{url('/admin/edit')}}" class="btn waves-effect button-full"><b>修改資訊</b></a>
         </div>
 

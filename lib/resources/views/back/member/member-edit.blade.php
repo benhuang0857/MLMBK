@@ -124,7 +124,10 @@
                             @endif
                         </select>
                     </div>
-
+                    <div class="form-group">
+                        <label for="remarks">填寫盒數</label>
+                        <input type="text" class="form-control" id="remarks" name="remarks" placeholder="會員暱稱" value="{{$MEM->remarks}}">
+                    </div>
                     <div class="form-group">
                         <label for="leader_id">指派領導(不填則照舊)</label>
                         <select class="form-control" id="leader_id" name="leader_id">

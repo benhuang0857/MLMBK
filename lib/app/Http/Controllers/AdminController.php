@@ -333,6 +333,7 @@ class AdminController extends Controller
         $user->contract_url = $request->input('contract_url');
         $user->role = $request->input('role');
         $user->milage = $request->input('milage');
+        $user->remarks = $request->input('remarks');
 
         $categories = Category::all();
         $mergeArray = array();

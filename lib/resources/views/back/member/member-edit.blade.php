@@ -99,7 +99,7 @@
                         <input type="text" class="form-control" id="authorization_code" name="authorization_code" value="{{$MEM->authorization_code}}" required>
                     </div>
                     <div class="form-group">
-                        <label for="contract_url">合約書連結<span style="color:red">*</span></label>
+                        <label for="contract_url">合約書連結</label>
                         <input type="text" class="form-control" id="contract_url" name="contract_url" value="{{$MEM->contract_url}}">
                     </div>
                     <div class="form-group">

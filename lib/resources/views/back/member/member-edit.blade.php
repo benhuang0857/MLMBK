@@ -100,7 +100,7 @@
                     </div>
                     <div class="form-group">
                         <label for="contract_url">合約書連結<span style="color:red">*</span></label>
-                        <input type="text" class="form-control" id="contract_url" name="contract_url" value="{{$MEM->contract_url}}" required>
+                        <input type="text" class="form-control" id="contract_url" name="contract_url" value="{{$MEM->contract_url}}">
                     </div>
                     <div class="form-group">
                         <label for="milage">里程數<span style="color:red">*</span></label>

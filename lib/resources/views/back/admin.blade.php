@@ -123,6 +123,21 @@
                 <span class="text-muted"></span>
                 </p>
             </div>
+            
+            @if (!empty($USER->milage))
+            <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
+                <p class="text-danger text-xl">
+                <i class="fa fa-mobile"></i>
+                您的里程數
+                </p>
+                <p class="d-flex flex-column text-right">
+                <span class="font-weight-bold">
+                    {{$USER->milage}}
+                </span>
+                <span class="text-muted"></span>
+                </p>
+            </div>
+            @endif
          
             @if (!empty($USER->remarks))
             <?php $PN = explode(',', $USER->remarks) ?>

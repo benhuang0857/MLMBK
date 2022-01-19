@@ -104,7 +104,7 @@
                     </div>
                     <div class="form-group">
                         <label for="milage">里程數<span style="color:red">*</span></label>
-                        <input type="number" class="form-control" id="milage" name="milage" value="{{$MEM->milage}}" required>
+                        <input type="text" class="form-control" id="milage" name="milage" value="{{$MEM->milage}}" required>
                     </div>
                     <div class="form-group">
                         <label for="role">會員身分<span style="color:red">*</span></label>
